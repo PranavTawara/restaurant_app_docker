@@ -1,17 +1,3 @@
-mongo db
-sudo systemctl start mongod
-
-Backend:
-npx nodemon src/server.js
-
-Frontend:
-npm start
-
-Docker 
-
-docker-compose up -d
-docker-compose logs -f
-
 # start
 docker-compose up -d
 
@@ -28,32 +14,21 @@ docker-compose down
 
 **Backend**
 ```bash
+1) Backend 
+
 cd restaurant-app/backend
 npm install
 
 
-Frontend
+2) Frontend
 
 cd ../frontend
 npm install
 
-3️⃣ Start MongoDB
+3) docker 
+docker-compose up -d --build
 
-Make sure MongoDB is installed and running locally:
 
-sudo systemctl start mongod 
-
-4️⃣ Run Backend
-
-cd ../backend
-npx nodemon src/server.js
-
-Runs on http://localhost:5000
-
-4️⃣ Run Frontend
-
-cd ../frontend
-npm start
 
 
 Runs on http://localhost:3000
